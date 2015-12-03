@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:icon="@drawable/ic_logo"
+    android:label="Turbo Finance"
+    tools:context=".HomeActivity"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons"
+        android:id="@+id/welcome"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:padding="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:inputType="textPersonName"
+            android:text="Welcome "
+            android:ems="9"
+            android:id="@+id/helloUser"
+            android:editable="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:scrollHorizontally="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:gravity="center_vertical"
+        android:id="@+id/buttons"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="Simple Mortgage Calculator"
+            android:id="@+id/simpleMortgage"
+            android:layout_gravity="center_vertical"
+            android:layout_alignLeft="@+id/optomizeMortg"
+            android:layout_alignStart="@+id/optomizeMortg"
+            android:layout_above="@+id/baselineData"
+            android:layout_alignRight="@+id/optomizeMortg"
+            android:layout_alignEnd="@+id/optomizeMortg"
+            android:background="@drawable/buttonshape"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="0dp"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Baseline Data"
+            android:id="@+id/baselineData"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/buttonshape"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="Optimize Mortgage Restructure"
+            android:id="@+id/optomizeMortg"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/baselineData"
+            android:background="@drawable/buttonshape"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:textSize="10dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/logout"
+            android:text="Logout"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:layout_gravity="center_vertical"
+            android:shadowColor="#A86161"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_below="@+id/optomizeMortg"
+            android:layout_alignLeft="@+id/optomizeMortg"
+            android:layout_alignStart="@+id/optomizeMortg"
+            android:layout_alignRight="@+id/optomizeMortg"
+            android:layout_alignEnd="@+id/optomizeMortg"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="50dp"
+            android:padding="10dp" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>
+

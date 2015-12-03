@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TurboFinance</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="title_activity_calc">Home Activity</string>
+    <string name="title_activity_baseline">Baseline Activity</string>
+    <string name="facebook_app_id">129483524082583</string>
+    <string name="title_activity_mortgage">Simple Calculator</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+</resources>
